@@ -19,7 +19,7 @@ U 1 1 5E4F529D
 P 9300 2850
 F 0 "CCD1" H 9350 3567 50  0000 C CNN
 F 1 "TCD1304" H 9350 3476 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W10.16mm" H 9300 2850 50  0001 C CNN
+F 2 "Package_DIP:DIP-22_W10.16mm_Socket_LongPads" H 9300 2850 50  0001 C CNN
 F 3 "~" H 9300 2850 50  0001 C CNN
 	1    9300 2850
 	1    0    0    -1  
@@ -599,8 +599,6 @@ F 3 "" H 4400 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4400 2350
-Wire Wire Line
-	4400 1650 4400 1700
 Connection ~ 4400 2200
 Connection ~ 4400 1700
 Wire Wire Line
@@ -839,4 +837,6 @@ Wire Wire Line
 	5850 900  5850 1300
 Wire Wire Line
 	9250 1600 9250 2000
+Wire Wire Line
+	4400 1600 4400 1700
 $EndSCHEMATC

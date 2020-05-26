@@ -56,9 +56,9 @@
          
          for (int i=0; i<3694; i++){ 
              ccd_data[i] = analogReadFastADC0(analogPin);
-             while(PINA & (1<<13)){}//Wait for the ICG pulse to end 
-             while(PINA & !(1<<13)){}//Wait for the next pulse
-  //           while(PINA & (1<<13)){}//Wait for the ICG pulse to end
+             while(digitalReadFast(4)){}//Wait for the ICG pulse to end 
+             while(digitalReadFast(4)){}//Wait for the next pulse
+  //           while(digitalReadFast(4)){}//Wait for the ICG pulse to end
          }
          for (int i=0;i<3694;i++){
           Serial.print(i);
